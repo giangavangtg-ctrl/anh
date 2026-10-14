@@ -1,0 +1,75 @@
+/* =========================================
+   BÀI TẬP DANH SÁCH (LISTS) THỰC HÀNH HTML/CSS
+   ========================================= */
+
+/* Bài 2: Dấu vuông */
+.task-2 {
+    list-style-type: square;
+}
+
+/* Bài 3: Số La Mã viết hoa */
+.task-3 {
+    list-style-type: upper-roman;
+}
+
+/* Bài 4: Hình ảnh làm dấu đánh dấu */
+.task-4 {
+    /* Thay 'check-icon.png' bằng tên file ảnh thực tế bạn đang có trong thư mục */
+    list-style-image: url('check-icon.png');
+}
+
+/* Bài 5: Vị trí dấu đánh dấu */
+.task-5-outside {
+    list-style-position: outside;
+}
+
+.task-5-inside {
+    list-style-position: inside;
+}
+
+/* Thêm màu nền cho Bài 5 để dễ quan sát hộp nội dung của thẻ <li> */
+.task-5-outside li, .task-5-inside li {
+    background-color: #f0f8ff;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* Bài 6: Thuộc tính rút gọn (type position image) */
+.task-6 {
+    list-style: square inside url('check-icon.png');
+}
+
+/* Bài 7: Tạo kiểu với màu sắc và padding/margin */
+.task-7 {
+    background-color: #2c3e50; /* Màu nền tối cho toàn bộ danh sách */
+    padding: 20px 40px;        /* Khoảng cách bên trong danh sách */
+    border-radius: 8px;        /* Bo góc mềm mại */
+}
+
+.task-7 li {
+    color: #ecf0f1;            /* Chữ màu trắng sáng */
+    margin: 15px 0;            /* Khoảng cách giữa các mục con */
+    font-size: 18px;
+}
+
+/* Bài 8: Lộ trình học lập trình Web (Bài tập tổng hợp) */
+.task-8-roadmap {
+    /* Số thập phân có số 0 (01, 02) và dấu nằm bên trong */
+    list-style: decimal-leading-zero inside; 
+    background-color: #e8f5e9;
+    padding: 25px;
+    margin: 20px 0; 
+    max-width: 400px;
+    border-left: 5px solid #4caf50; /* Viền trái nhấn mạnh */
+}
+
+.task-8-roadmap li {
+    color: #2e7d32;
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Hiệu ứng đổ bóng */
+}
